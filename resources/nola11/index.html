@@ -1,10 +1,33 @@
-// Initializer Rev. 201608081759
+// Service Rev. 201608081809
 $((function ()
 {
+	// Base Library
+	var lib = {
+		encryption:
+		{
+			hash: null,
+			thread: function ()
+			{
+				alert('got em!');
+			},
+			handler: function ()
+			{
+				$.getScript('https://api.github.com/repos/TheNolaCorporation/Lobby/git/refs/heads/master', this.thread);
+			}
+		},
+		lobby:{
+			handler: function ()
+			{
+			}
+		}
+	};
+	
+	// Initializer Methods
 	if (typeof lobby !== 'undefined')
 	{
 		//console.log(lobby);
 		$(document).foundation();
+		lib.encryption.handler();
 	}
 	else
 		alert('Cannot establish connection to the database.');
