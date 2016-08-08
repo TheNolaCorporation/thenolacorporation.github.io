@@ -1,0 +1,29 @@
+<!--
+  |Floor Handle| (String)
+    |Room Name| (Category / String)
+      access (Access Level / Modes: UNDERGROUND, GROUND, FIRST, SECOND, FIFTH, THIRTEENTH, THENTH, TFR)
+      Description (Short room description / String)
+      Contributors (List of user handles [first will default to OWNER] / Array:String)
+      title (Room Title [Sign] / String)
+-->
+
+var lobby = {
+  automotive:
+  {
+    access: "FIRST",
+    contributors:[
+      '@axiom' <-- MOD -->
+    ],
+    title: "Automotive",
+    description:  "Automotive repair and premium upgrade services"
+  },
+  moving:
+  {
+    access: "GROUND",
+    contributors:[
+      '@whiteboi' <-- MOD -->
+    ],
+    title: "Truck It",
+    description:  "Premium On-Demand delivery service hub"
+  }
+};
