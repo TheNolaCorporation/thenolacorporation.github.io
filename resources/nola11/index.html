@@ -1,4 +1,4 @@
-// Service Rev. 201608081809
+// Service Rev. 201608081812
 $((function ()
 {
 	// Base Library
@@ -12,6 +12,7 @@ $((function ()
 			},
 			handler: function ()
 			{
+				alert('got here yo!');
 				$.getScript('https://api.github.com/repos/TheNolaCorporation/Lobby/git/refs/heads/master', this.thread);
 				return false;
 			}
