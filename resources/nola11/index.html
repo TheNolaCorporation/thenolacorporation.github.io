@@ -18,6 +18,7 @@ $((function ()
 			},
 			init: function ()
 			{
+				alert('assigning event');
 				$(':submit').click(lib.encryption.handler)
 			}
 		},
@@ -36,7 +37,6 @@ $((function ()
 	// Initializer Methods
 	if (typeof lobby !== 'undefined')
 	{
-		alert('WTF?!');
 		lib.encryption.init();
 		lib.lobby.init(lobby);
 	}
