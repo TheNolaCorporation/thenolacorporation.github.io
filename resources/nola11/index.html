@@ -1,7 +1,10 @@
-if (typeof lobby !== 'undefined')
+$((function ()
 {
-	console.log(lobby);
-	$(document).foundation();
-}
-else
-	alert('Cannot establish connection to the database.');
+	if (typeof lobby !== 'undefined')
+	{
+		console.log(lobby);
+		$(document).foundation();
+	}
+	else
+		alert('Cannot establish connection to the database.');
+])());
