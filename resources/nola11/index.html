@@ -15,11 +15,20 @@ $((function ()
 				alert('got here yo!');
 				$.getScript('https://api.github.com/repos/TheNolaCorporation/Lobby/git/refs/heads/master', this.thread);
 				return false;
+			},
+			init: function ()
+			{
+				$('[type=submit]').click(lib.encryption.handler)
 			}
 		},
 		lobby:{
-			handler: function ()
+			handler: function (lobby)
 			{
+				console.log(lobby);
+			},
+			init: function (lobby)
+			{
+				this.handler(lobby);
 			}
 		}
 	};
@@ -27,9 +36,9 @@ $((function ()
 	// Initializer Methods
 	if (typeof lobby !== 'undefined')
 	{
-		//console.log(lobby);
 		$(document).foundation();
-		$('[type=submit]').click(lib.encryption.handler);
+		lib.encryption.init();
+		lib.lobby.init(lobby);
 	}
 	else
 		alert('Cannot establish connection to the database.');
