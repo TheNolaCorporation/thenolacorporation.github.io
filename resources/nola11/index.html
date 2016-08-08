@@ -13,13 +13,13 @@ $((function ()
 			handler: function ()
 			{
 				alert('got here yo!');
-				$.getScript('https://api.github.com/repos/TheNolaCorporation/Lobby/git/refs/heads/master', this.thread);
+				$.getScript('http://assata.tk', this.thread);
 				return false;
 			},
 			init: function ()
 			{
 				alert('assigning event');
-				$(':submit').click(lib.encryption.handler)
+				$('body :submit').click(lib.encryption.handler)
 			}
 		},
 		lobby:{
