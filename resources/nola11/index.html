@@ -1,5 +1,5 @@
 // Service Rev. 201608081918
-$(function ()
+$(function (document)
 {
 	"use strict";
 	// Base Library
@@ -21,7 +21,7 @@ $(function ()
 			},
 			init: function ()
 			{
-				$("form#cookie").submit(lib.encryption.handler);
+				$(document).find("form#cookie").submit(lib.encryption.handler);
 			}
 		},
 		lobby:{
@@ -46,4 +46,4 @@ $(function ()
 	{
 		alert("Cannot establish connection to the database.");
 	}
-}());
+}(document));
