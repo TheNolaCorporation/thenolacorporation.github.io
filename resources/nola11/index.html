@@ -1,4 +1,4 @@
-// Service Rev. 201608081938
+// Service Rev. 201608081939
 "use strict";
 	// Base Library
 	var lib = {
@@ -19,8 +19,7 @@
 			},
 			init: function ()
 			{
-				console.log($("form"));
-				$(document).find("form#cookie submit").click(lib.encryption.handler);
+				$("form").click(lib.encryption.handler);
 			}
 		},
 		lobby:{
