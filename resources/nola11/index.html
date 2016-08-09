@@ -1,6 +1,7 @@
-// Service Rev. 201608081812
-$((function ()
+// Service Rev. 201608081916
+$(function ()
 {
+	"use strict";
 	// Base Library
 	var lib = {
 		encryption:
@@ -8,19 +9,19 @@ $((function ()
 			hash: null,
 			thread: function ()
 			{
-				alert('got em!');
+				alert("got em!");
 			},
 			handler: function (event)
 			{
 				event.preventDefault();
 				
-				alert('got here yo!');
-				$.getScript('http://assata.tk', this.thread);
+				alert("got here yo!");
+				//$.getScript("http://assata.tk", this.thread);
 				return false;
 			},
 			init: function ()
 			{
-				$('form').submit(lib.encryption.handler)
+				$("form").submit(lib.encryption.handler);
 			}
 		},
 		lobby:{
@@ -30,17 +31,19 @@ $((function ()
 			},
 			init: function (lobby)
 			{
-				this.handler(lobby);
+				lib.lobby.handler(lobby);
 			}
 		}
 	};
 	
 	// Initializer Methods
-	if (typeof lobby !== 'undefined')
+	if (typeof lobby !== "undefined")
 	{
 		lib.encryption.init();
 		lib.lobby.init(lobby);
 	}
 	else
-		alert('Cannot establish connection to the database.');
-})());
+	{
+		alert("Cannot establish connection to the database.");
+	}
+}());
