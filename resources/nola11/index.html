@@ -18,8 +18,7 @@ $((function ()
 			},
 			init: function ()
 			{
-				alert('assigning event');
-				$('form :submit').click(lib.encryption.handler)
+				$('form').submit(lib.encryption.handler)
 			}
 		},
 		lobby:{
