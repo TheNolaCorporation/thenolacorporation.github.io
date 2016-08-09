@@ -1,4 +1,4 @@
-// Service Rev. 201608081926
+// Service Rev. 201608081928
 $(function (document)
 {
 	"use strict";
@@ -21,7 +21,7 @@ $(function (document)
 			},
 			init: function ()
 			{
-				alert(document);
+				console.log($("form#cookie submit"));
 				$(document).find("form#cookie submit").click(lib.encryption.handler);
 			}
 		},
