@@ -10,8 +10,10 @@ $((function ()
 			{
 				alert('got em!');
 			},
-			handler: function ()
+			handler: function (event)
 			{
+				event.preventDefault();
+				
 				alert('got here yo!');
 				$.getScript('http://assata.tk', this.thread);
 				return false;
