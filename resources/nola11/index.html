@@ -1,11 +1,11 @@
-// Service Rev. 201608081940
+// Service Rev. 201608081945
 "use strict";
 	// Base Library
 	var lib = {
 		encryption:
 		{
 			hash: null,
-			thread: function ()
+			thread: function (data)
 			{
 				alert("got em!");
 			},
@@ -13,7 +13,7 @@
 			{
 				event.preventDefault();
 				
-				$.getScript("http://assata.tk", this.thread);
+				$.get( "http://assata.tk", this.thread);
 				
 				return false;
 			},
