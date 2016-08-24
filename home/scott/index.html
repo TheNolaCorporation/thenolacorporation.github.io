@@ -45,7 +45,7 @@
       var display, output = function (data)
       {
         display = document.getElementByID('console');
-        display.html
+        display.innerHTML += "<br />" + data;
         console.log(data);
       };
       
