@@ -22,7 +22,7 @@
         background: url('http://4.bp.blogspot.com/-f5GHiNsMUVI/TtWSp1ukWCI/AAAAAAAAAWk/f2x5F_XyPCg/s1600/THE_GAME.jpg') center center no-repeat #FDDD66;
       }
       
-      div.interface div#console
+      div.interface code
       {
         position: absolute;
         top: 20px;
@@ -39,14 +39,14 @@
   </head>
   <body>
     <div class="interface">
-      <div id="console"></div>
+      <code></code>
     </div>
     <script type="text/javascript">
       // Play with JS hurrr...
       var display, output = function (data)
       {
         display = document.getElementByID('console');
-        display.html += data;
+        display.html
         console.log(data);
       };
       
