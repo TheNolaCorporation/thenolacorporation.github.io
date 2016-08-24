@@ -24,12 +24,20 @@
     </style>
   </head>
   <body>
-    <div class="interface"></div>
+    <div class="interface">
+      <div id="console"></div>
+    </div>
     <script type="text/javascript">
       // Play with JS hurrr...
+      var display, output = function (data)
+      {
+        display = document.getElementByID('console');
+        display.html += data;
+        console.log(data);
+      };
       
       //VVVV Figure out what this does... Pretty cool shit... VVVVV
-      console.log('Cool deal...');
+      output("Hello World!");
     </script>
   </body>
 </html>
