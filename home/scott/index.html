@@ -48,7 +48,7 @@
         display,
         output = function (data)
         {
-          display = document.getElementsByTagName("code");
+          display = Sizzle("code");
           display.innerHTML = display.innerHTML + "<br />" + data;
           console.log(data);
         };
