@@ -4,6 +4,7 @@
     <title>
       Herro Scottu-San! Moshi moshi!
     </title>
+    <script type="text/javascript" src="js/domready.js"></script>
     <style type="text/css">
       html, body {
         margin: 0;
@@ -52,7 +53,7 @@
         };
       
       //VVVV Figure out what this does... Pretty cool shit... VVVVV
-      output("Hello World!");
+      DomReady.ready(function() { output("Hello World!"); });
     </script>
   </body>
 </html>
