@@ -42,12 +42,14 @@
     </div>
     <script type="text/javascript">
       // Play with JS hurrr...
-      var output = function (data)
-      {
-        var display = document.getElementByTagName("code");
-        display.innerHTML = display.innerHTML + "<br />" + data;
-        console.log(data);
-      };
+      var
+        display,
+        output = function (data)
+        {
+          display = document.getElementsByTagName()("code");
+          display.innerHTML = display.innerHTML + "<br />" + data;
+          console.log(data);
+        };
       
       //VVVV Figure out what this does... Pretty cool shit... VVVVV
       output("Hello World!");
