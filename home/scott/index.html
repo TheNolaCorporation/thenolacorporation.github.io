@@ -40,16 +40,14 @@
   </head>
   <body>
     <div class="interface">
-      <code>Loading...</code>
+      <code id="dispout">Loading...</code>
     </div>
     <script type="text/javascript">
       // Play with JS hurrr...
-      var
-        display,
-        output = function (data)
+      var output = function (data)
         {
-          display = Sizzle("code");
-          display.innerHTML = display.innerHTML + "<br />" + data;
+          var display = document.getElementGetElementByID("dispout");
+          display.innerHTML += "<br />" + data;
           console.log(data);
         };
       
